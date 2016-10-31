@@ -4,19 +4,16 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  text-transform: capitalize;
 }
 
 .main-header {
   font-size: 16px;
   line-height: 30px;
-  color: #283136;
-  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
 }
