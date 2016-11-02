@@ -63,6 +63,49 @@ body {
   margin-bottom: 60px;
 }
 
+.main {
+
+}
+
+.options {
+  min-height: 350px;
+  margin-bottom: 80px;
+}
+
+.options-items {
+  width: 300px;
+  float: left;
+  margin-right: 100px;
+}
+
+.options-item:last-child {
+  margin-right: 60px;
+}
+
+.dignitys {
+  min-height: 530px;
+}
+
+.dignitys-description-1 {
+  float: left;
+  width: 660px;
+}
+
+.dignitys-description-2 {
+  float: right;
+  width: 360px;
+}
+
+.clients-logotips {
+  min-height: 90px;
+  display: inline-block;
+  margin-right: 90px;
+}
+
+.client-logotips:last-child {
+  margin-right: 0px;
+}
+
 .slider-title {
   font-size: 55px;
   line-height: 55px;
