@@ -67,3 +67,30 @@ body {
   font-size: 55px;
   line-height: 55px;
 }
+
+.mine-footer {
+  min-height: 635px;
+  margin-top: 60px;
+}
+
+.footer-contacts {
+  min-height: 415px;
+}
+
+.footer-social {
+  padding-top,bottom: 70px;
+}
+
+.footer-social-left {
+  float: left;
+  width: 360px;
+}
+
+.footer-social-right {
+  float: right;
+  width: 780px;
+}
+
+.social-btn a {
+  display: inline-block;
+}
