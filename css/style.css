@@ -13,6 +13,56 @@ body {
   font-weight: 500;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top {
+  min-height: 70px;
+}
+
+.logo {
+  float: left;
+  width: 160px;
+  margin-right: 40px;
+}
+
+.main-navigation {
+  float: left;
+  width: 760px;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.basket {
+  float: right;
+  width: 160px;
+}
+
+.header-content {
+  min-height: 430px;
+  margin-bottom: 80px;
+}
+
+.main-header h1 {
+  min-height: 240px;
+  margin-bottom: 60px;
+}
+
 .slider-title {
   font-size: 55px;
   line-height: 55px;
