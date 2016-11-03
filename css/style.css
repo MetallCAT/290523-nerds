@@ -127,16 +127,21 @@ body {
 
 .mine-footer {
   min-height: 635px;
-  margin-top: 60px;
 }
 
 .footer-contacts {
-  min-height: 415px;
+  
+}
+
+.contacts {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 140px;
 }
 
 .footer-social {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .footer-social-left {
