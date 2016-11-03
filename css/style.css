@@ -11,8 +11,8 @@ body {
   line-height: 30px;
   color: #000000;
   font-weight: 500;
-  width: 1200;
-  background-color: "eeeeee";
+  width: 1440px;
+  background-color: #eeeeee;
 }
 
 .clearfix::after {
@@ -60,7 +60,7 @@ body {
 }
 
 .slider {
-  display: inline-block;
+
 }
 
 .slider-info {
@@ -84,7 +84,7 @@ body {
 }
 
 .main {
-
+  background-color: #ffffff;
 }
 
 .options {
@@ -119,7 +119,24 @@ body {
 
 .clients-logotips {
   vertical-align: middle;
-  display: inline-block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logotips-img1 {
+  padding-right: 96px;
+}
+
+.logotips-img2 {
+  padding-right: 103px;
+}
+
+.logotips-img3 {
+  padding-right: 121px;
+}
+
+.logotips-img4 {
+
 }
 
 .main-footer {
@@ -153,4 +170,16 @@ body {
 
 .social-btn a {
   display: inline-block;
+}
+
+.popup {
+  display: none;
+}
+
+.slide-2 {
+  display: none;
+}
+
+.slide-3 {
+  display: none;
 }
