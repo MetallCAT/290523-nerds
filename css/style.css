@@ -72,6 +72,11 @@ body {
 
 }
 
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
 .heading {
   margin-top: 80px;
   margin-bottom: 115px;
@@ -85,6 +90,7 @@ body {
 .options {
   min-height: 350px;
   margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .options-items {
@@ -94,7 +100,7 @@ body {
 }
 
 .options-item:last-child {
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 .dignitys {
@@ -112,18 +118,8 @@ body {
 }
 
 .clients-logotips {
-  min-height: 90px;
+  vertical-align: middle;
   display: inline-block;
-  margin-right: 90px;
-}
-
-.client-logotips:last-child {
-  margin-right: 0px;
-}
-
-.slider-title {
-  font-size: 55px;
-  line-height: 55px;
 }
 
 .main-footer {
