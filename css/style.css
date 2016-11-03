@@ -64,7 +64,6 @@ body {
 .slider-info {
   margin-top: 80px;
   margin-bottom: 80px;
-  margin-right: 20px;
 }
 
 .slides-controls {
@@ -125,18 +124,18 @@ body {
   line-height: 55px;
 }
 
-.mine-footer {
+.main-footer {
   min-height: 635px;
 }
 
 .footer-contacts {
-  
+
 }
 
 .contacts {
-  margin-top: 55px;
-  margin-bottom: 55px;
-  margin-left: 140px;
+  top: 55px;
+  bottom: 55px;
+  left: 140px;
 }
 
 .footer-social {
