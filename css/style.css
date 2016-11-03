@@ -11,6 +11,8 @@ body {
   line-height: 30px;
   color: #000000;
   font-weight: 500;
+  width: 1200;
+  background-color: "eeeeee";
 }
 
 .clearfix::after {
@@ -58,12 +60,12 @@ body {
 }
 
 .slider {
-
+  display: inline-block;
 }
 
 .slider-info {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .slides-controls {
@@ -134,8 +136,8 @@ body {
 
 .contacts {
   top: 55px;
-  bottom: 55px;
   left: 140px;
+  position: absolute;
 }
 
 .footer-social {
