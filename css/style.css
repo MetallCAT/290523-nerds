@@ -15,6 +15,7 @@ body {
   font-weight: 500;
   width: 1440px;
   background-color: #eeeeee;
+  padding-top: 50px;
 }
 
 .clearfix::after {
@@ -100,11 +101,11 @@ body {
   padding-top: 80px;
 }
 
-.options-items {
+.options-item {
   width: 300px;
   margin-right: 100px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .options-item:last-child {
@@ -151,10 +152,12 @@ body {
 .content-left {
   min-height: 775px;
   width: 260px;
+  float: left;
 }
 
 .content-right {
-
+  width: 760px;
+  float: right;
 }
 
 .list {
@@ -178,6 +181,7 @@ body {
   vertical-align: top;
   margin-right: 40px;
   margin-bottom: 40px;
+  font-size: 16px;
 }
 
 .catalog-item:nth-child(2n) {
@@ -185,7 +189,7 @@ body {
 }
 
 .paginator {
-  width: 460px;
+
 }
 
 .main-footer {
@@ -203,6 +207,9 @@ body {
 }
 
 .footer-social {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
   min-height: 80px;
   padding-top: 70px;
   padding-bottom: 70px;
