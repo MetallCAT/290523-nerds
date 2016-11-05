@@ -209,10 +209,8 @@ body {
 .footer-social {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
-  min-height: 80px;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 20px;
+  min-height: 80px;  
 }
 
 .footer-social-left {
