@@ -31,7 +31,7 @@ body {
 }
 
 .header-top {
-  min-height: 115px;
+  min-height: 115px;  
 }
 
 .logo {
@@ -161,6 +161,32 @@ body {
 
 .options-item:last-child {
   margin-right: 0px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.options-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 18px;
+  padding: 20px 40px;
+}
+
+.web {
+  background-color: #fb565a;
+}
+
+.apps {
+  background-color: #00ca74;
+}
+
+.presentations {
+  background-color: #efc84a;
 }
 
 .dignitys {
