@@ -43,20 +43,69 @@ body {
 .main-navigation {
   float: left;
   width: 440px;
+
 }
+
+.main-navigation ul {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.main-navigation a:last-child {
+  margin-right: 0px;
+}
+
+.main-navigation a:hover {
+  color: #f87478;
+}
+
 
 .navigation {
   display: inline-block;
+  text-transform: uppercase;
 }
 
 .navigation li {
   display: inline-block;
+  vertical-align: top;
+}
+
+.user-block {
+  float: right;
+  max-width: 160px;
+  margin-top: 25px;
+}
+
+.user-block a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .basket {
-  float: right;
-  width: 160px;
+  position: relative;
   text-align: right;
+  text-transform: uppercase;
+}
+
+.basket:hover {
+  color: #f87f81;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+  width: 15px;
+  height: 15px;
+  background: url("img/sprite.png") no-repeat;
+  background-position: -10px -10px;
 }
 
 .header-content {
@@ -89,6 +138,8 @@ body {
   padding-top: 80px;
   padding-bottom: 115px;
   text-align: center;
+  font-size: 55px;
+  line-height: 55px;
 }
 
 .main {
@@ -210,7 +261,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding: 70px 20px;
-  min-height: 80px;  
+  min-height: 80px;
 }
 
 .footer-social-left {
@@ -242,4 +293,70 @@ body {
 
 .contacts {
   display: none;
+}
+
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.sprite-check {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -45px;
+}
+
+.sprite-check-1 {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -88px;
+}
+
+.sprite-point {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -131px;
+}
+
+.sprite-point-1 {
+    width: 25px;
+    height: 25px;
+    background-position: -10px -176px;
+}
+
+.sprite-social-logotip-1 {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -221px;
+}
+
+.sprite-social-logotip-2 {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -256px;
+}
+
+.sprite-social-logotip-3 {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -298px;
+}
+
+.sprite-sort-down {
+    width: 9px;
+    height: 9px;
+    background-position: -10px -339px;
+}
+
+.sprite-sort-up {
+    width: 9px;
+    height: 9px;
+    background-position: -10px -368px;
 }
