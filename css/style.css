@@ -232,17 +232,61 @@ body {
 }
 
 .dignitys {
-  min-height: 530px;
+  min-height: 530px;  
 }
 
 .dignitys-description-1 {
   float: left;
-  width: 660px;
+  width: 660px;    
+}
+
+.dignitys-description-1 h1 {
+  font-size: 45px;
+  line-height: 45px; 
+}
+
+.dignitys-description-1 h3 {
+  text-transform: uppercase; 
+}
+
+.dignitys-description-1 li {
+  list-style-type: none; 
+  margin-top: 30px;
 }
 
 .dignitys-description-2 {
   float: right;
   width: 360px;
+}
+
+.dignitys-description-2 img {
+  margin-top: 40px;
+  margin-bottom: 36px;
+}
+
+.dignitys-description-2 h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.dignitys-description-2 ul {
+  display: table;
+  width: 360px;
+  height: 100px;
+}
+
+.dignitys-description-2 li {
+  line-height: 18px;
+  list-style-type: none;
+  display: table-cell; 
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dignitys-description-2 span {
+  
+  font-size: 45px;
+  line-height: 10,06px; 
 }
 
 .clients-logotips {
