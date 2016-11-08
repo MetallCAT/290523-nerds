@@ -253,8 +253,9 @@ body {
 }
 
 .dignitys-description-1 ul {
-    padding: 0;
-    margin: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .dignitys-description-1 li {
@@ -270,7 +271,7 @@ body {
   height: 2px;
   background-color: #fb565a;
   top: ;
-  left: ;
+  left: 0;
   vertical-align: middle;
 }
 
