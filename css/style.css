@@ -1,8 +1,10 @@
 @font-face {
-  font-family: 'Web font';
-  src: url('webfont.woff2') format('woff2'),
-       url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */
-       url('webfont.woff') format('woff');
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff') format('woff');
+  font-family: 'Roboto Medium';  
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
 }
@@ -121,6 +123,7 @@ body {
 
 .slider {
   font-size: 0;
+  position: relative;
 }
 
 .slider-info {
@@ -145,7 +148,7 @@ body {
 }
 
 .slider-left p {
-  
+  margin-bottom: 40px;
 }
 
 .slider-left a {
@@ -155,7 +158,6 @@ body {
   padding: 18px 52px;
   text-transform: uppercase; 
   line-height: 18px;
-  margin-top: 34px;
 }
 
 .slider-title {
@@ -166,8 +168,9 @@ body {
 .slides-controls {
   position: absolute;
   vertical-align: top;
-  left: 735px;
-  top: 515px;
+  left: 535px;
+  top: 315px;
+    
 }
 
 
@@ -208,7 +211,7 @@ body {
 
 .options-item p {
   width: 240px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .options-item a {
@@ -249,9 +252,26 @@ body {
   text-transform: uppercase; 
 }
 
+.dignitys-description-1 ul {
+    padding: 0;
+    margin: 0;
+}
+
 .dignitys-description-1 li {
   list-style-type: none; 
   margin-top: 30px;
+  padding-left: 35px;
+}
+
+.dignitys-description-1 li::before {
+  content: "";  
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  top: ;
+  left: ;
+  vertical-align: middle;
 }
 
 .dignitys-description-2 {
@@ -270,23 +290,24 @@ body {
 }
 
 .dignitys-description-2 ul {
-  display: table;
   width: 360px;
   height: 100px;
+  padding: 0;    
 }
 
 .dignitys-description-2 li {
   line-height: 18px;
   list-style-type: none;
-  display: table-cell; 
-  text-align: center;
-  vertical-align: middle;
+  display: inline-block; 
+  vertical-align: top;
+  width: 115px;  
 }
 
 .dignitys-description-2 span {
-  
+  display: block;
   font-size: 45px;
-  line-height: 10,06px; 
+  line-height: 10,06px;
+  margin-bottom: 27px; 
 }
 
 .clients-logotips {
