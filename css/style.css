@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Web font';
+  src: url('webfont.woff2') format('woff2'),
+       url('webfont.ttf')  format('truetype'), /* Только если нужна поддержка старых Android, иначе закомментировать */
+       url('webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto";
   font-weight: normal;
@@ -31,7 +40,8 @@ body {
 }
 
 .header-top {
-  min-height: 115px;  
+  min-height: 115px;
+  line-height: 30px;
 }
 
 .logo {
@@ -43,7 +53,9 @@ body {
 .main-navigation {
   float: left;
   width: 440px;
-
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0; 
 }
 
 .main-navigation ul {
@@ -51,35 +63,34 @@ body {
   padding: 0;
 }
 
-.main-navigation a {
-  color: #000000;
-  text-decoration: none;
-  margin-right: 50px;
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  margin-right: 49px;
 }
 
-.main-navigation a:last-child {
+.main-navigation li:last-child {
   margin-right: 0px;
+}
+
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;  
 }
 
 .main-navigation a:hover {
   color: #f87478;
 }
 
-
-.navigation {
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.navigation li {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .user-block {
   float: right;
   max-width: 160px;
   margin-top: 25px;
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+  padding-left: 41px;  
 }
 
 .user-block a {
@@ -87,52 +98,78 @@ body {
   text-decoration: none;
 }
 
-.basket {
-  position: relative;
-  text-align: right;
-  text-transform: uppercase;
-}
-
 .basket:hover {
   color: #f87f81;
 }
 
-.login::before {
+.basket::before {
   content: "";
   position: absolute;
-  bottom: 25px;
-  right: 100px;
+  top: 7px;
+  left: 0;
   width: 15px;
   height: 15px;
-  background: url("img/sprite.png") no-repeat;
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;  
   background-position: -10px -10px;
+    
 }
 
 .header-content {
-
+  height: 431px;
 }
 
 .slider {
-
+  font-size: 0;
 }
 
 .slider-info {
-
+  position: relative;  
+  font-size: 16px;
 }
 
-.slides-controls {
+.slider-info .slider-left {
+  display: inline-block;
   position: absolute;
-}
-
-.slider-left {
+  vertical-align: top;
+  left: 0; 
+  width: 440px;
+  z-index: 10;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.slider-info img {
+  position: absolute;
+  right: 0;
+}
+
+.slider-left p {
+  
+}
+
+.slider-left a {
+  color: #ffffff;
+  background-color: #fb565a;
+  text-decoration: none;
+  padding: 18px 52px;
+  text-transform: uppercase; 
+  line-height: 18px;
+  margin-top: 34px;
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
 }
+
+.slides-controls {
+  position: absolute;
+  vertical-align: top;
+  left: 735px;
+  top: 515px;
+}
+
 
 .heading {
   padding-top: 80px;
@@ -163,10 +200,15 @@ body {
   margin-right: 0px;
 }
 
-h3 {
+.options-item h3 {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.options-item p {
+  width: 240px;
+  margin-bottom: 30px;
 }
 
 .options-item a {
@@ -174,7 +216,7 @@ h3 {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 18px;
-  padding: 20px 40px;
+  padding: 18px 40px;
 }
 
 .web {
@@ -327,6 +369,7 @@ h3 {
     display: block;
 }
 
+/*
 .sprite-basket {
     width: 15px;
     height: 15px;
@@ -386,3 +429,4 @@ h3 {
     height: 9px;
     background-position: -10px -368px;
 }
+*/
