@@ -135,7 +135,7 @@ body {
 .slider-info {
   position: relative;  
   font-size: 16px;
-}
+ }
 
 .slider-info .slider-left {
   display: inline-block;
@@ -151,9 +151,11 @@ body {
 .slider-title {
   font-size: 55px;
   line-height: 55px;
+  margin-bottom: 0;
 }
 
-.slider-left p {
+.slider-left p { 
+  margin-top: 24px;
   margin-bottom: 40px;   
 }
 
@@ -175,8 +177,7 @@ body {
   position: absolute;
   vertical-align: top;
   left: 535px;
-  top: 315px;
-    
+  top: 315px;    
 }
 
 
@@ -200,7 +201,7 @@ body {
 
 .options-item {
   width: 300px;
-  margin-right: 100px;
+  margin-right: 96px;
   display: inline-block;
   vertical-align: top;
 }
@@ -225,7 +226,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   line-height: 18px;
-  padding: 18px 40px;
+  padding: 16px 40px;
 }
 
 .web {
@@ -410,13 +411,37 @@ body {
 }
 
 .footer-social-right {
-
   float: right;
   width: 760px;
 }
 
-.social-btn a {
+.footer-social-left a {
   display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  text-decoration: none;
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.social-logotip-1 {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -221px;
+}
+
+.social-logotip-2 {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -256px;
+}
+
+.social-logotip-3 {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -298px;
 }
 
 .popup {
