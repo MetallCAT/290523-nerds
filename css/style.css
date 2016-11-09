@@ -1,11 +1,16 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/roboto.woff2') format('woff2'),
-       url('../fonts/roboto.woff') format('woff');
+       url('../fonts/roboto.woff') format('woff');  
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto Medium';  
   src: url('../fonts/robotomedium.woff2') format('woff2'),
-       url('../fonts/robotomedium.woff') format('woff');  
-  font-weight: normal;
+       url('../fonts/robotomedium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -42,7 +47,7 @@ body {
 }
 
 .header-top {
-  min-height: 115px;
+  min-height: 65px;
   line-height: 30px;
 }
 
@@ -69,7 +74,7 @@ body {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
-  margin-right: 49px;
+  margin-right: 46px;
 }
 
 .main-navigation li:last-child {
@@ -122,6 +127,7 @@ body {
 }
 
 .slider {
+    
   font-size: 0;
   position: relative;
 }
@@ -135,20 +141,20 @@ body {
   display: inline-block;
   position: absolute;
   vertical-align: top;
-  left: 0; 
+  left: 0;
+  top: 20px;
   width: 440px;
-  z-index: 10;
-  padding-top: 80px;
+  z-index: 10;  
   padding-bottom: 80px;
 }
 
-.slider-info img {
-  position: absolute;
-  right: 0;
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
 }
 
 .slider-left p {
-  margin-bottom: 40px;
+  margin-bottom: 40px;   
 }
 
 .slider-left a {
@@ -160,9 +166,9 @@ body {
   line-height: 18px;
 }
 
-.slider-title {
-  font-size: 55px;
-  line-height: 55px;
+.slider-info img {
+  position: absolute;
+  right: 0;  
 }
 
 .slides-controls {
@@ -210,7 +216,7 @@ body {
 }
 
 .options-item p {
-  width: 240px;
+  width: 250px;
   margin-bottom: 34px;
 }
 
@@ -245,20 +251,21 @@ body {
 
 .dignitys-description-1 h1 {
   font-size: 45px;
-  line-height: 45px; 
+  line-height: 45px;
+  margin-top: 80px;
 }
 
 .dignitys-description-1 h3 {
   text-transform: uppercase; 
 }
 
-.dignitys-description-1 ul {
-  position: relative;
+.dignitys-description-1 ul {  
   padding: 0;
   margin: 0;
 }
 
 .dignitys-description-1 li {
+  position: relative;
   list-style-type: none; 
   margin-top: 30px;
   padding-left: 35px;
@@ -270,9 +277,8 @@ body {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  top: ;
-  left: 0;
-  vertical-align: middle;
+  top: 10px;
+  left: 0;  
 }
 
 .dignitys-description-2 {
