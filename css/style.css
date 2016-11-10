@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto.woff2') format('woff2'),
-       url('../fonts/roboto.woff') format('woff');  
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");  
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto Medium';  
-  src: url('../fonts/robotomedium.woff2') format('woff2'),
-       url('../fonts/robotomedium.woff') format('woff');
+  font-family: "Roboto Medium";  
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", "Tahoma", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
 }
 
-.main-header {
+.main-header {  
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -47,6 +47,7 @@ body {
 }
 
 .header-top {
+  font-family: "Roboto Medium"; "Tahoma", sans-serif;
   min-height: 65px;
   line-height: 30px;
 }
@@ -138,10 +139,8 @@ body {
   font-size: 16px;
  }
 
-.slider-info .slider-left {
-  display: inline-block;
-  position: absolute;
-  vertical-align: top;
+.slider-info .slider-left {  
+  position: absolute;  
   left: 0;
   top: 20px;
   width: 440px;
@@ -150,40 +149,45 @@ body {
 }
 
 .slider-title {
+  font-family: "Roboto Medium"; "Tahoma", sans-serif;
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 0;
   padding-top: 10px;
 }
 
-.slider-left p { 
+.slider-left p {   
   margin-top: 22px;
-  margin-bottom: 41px;   
+  margin-bottom: 41px;
+  color: #283136;
 }
 
-.slider-left a {
+.slider-left a {  
   color: #ffffff;
   background-color: #fb565a;
   text-decoration: none;
   padding: 16px 54px;
   text-transform: uppercase; 
   line-height: 18px;
+  border-radius: 2px; 
 }
 
 .slider-info img {
   position: absolute;
-  right: 0;  
+  right: 0;
+  top: 0;
 }
 
 .slides-controls {
-  position: absolute;
-  vertical-align: top;
+  position: absolute;  
   left: 535px;
   top: 315px;    
 }
 
 
 .heading {
+  margin: 0;  
+  font-family: "Roboto Medium"; "Tahoma", sans-serif;
   padding-top: 80px;
   padding-bottom: 115px;
   text-align: center;
@@ -219,6 +223,7 @@ body {
 }
 
 .options-item p {
+  color: #283136;
   width: 250px;
   margin-bottom: 34px;
 }
@@ -229,6 +234,7 @@ body {
   color: #ffffff;
   line-height: 18px;
   padding: 16px 40px;
+  border-radius: 2px;
 }
 
 .web {
@@ -253,6 +259,7 @@ body {
 }
 
 .dignitys-description-1 h1 {
+  font-family: "Roboto Medium"; "Tahoma", sans-serif;
   font-size: 45px;
   line-height: 45px;
   margin-top: 75px;
@@ -263,6 +270,7 @@ body {
 }
 
 .dignitys-description-1 p {
+  color: #283136;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -274,6 +282,7 @@ body {
 }
 
 .dignitys-description-1 li {
+  color: #283136;
   position: relative;
   list-style-type: none; 
   margin-top: 30px;
@@ -312,6 +321,7 @@ body {
 }
 
 .dignitys-description-2 li {
+  color: #283136;
   line-height: 18px;
   list-style-type: none;
   display: inline-block; 
@@ -330,6 +340,7 @@ body {
   vertical-align: middle;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .logotips-img1 {
@@ -418,30 +429,28 @@ body {
   min-height: 220px;
 }
 
-.footer-social-left a {
+.footer-social-left a {  
   display: inline-block;
+  vertical-align: top;
   width: 80px;
   height: 80px;
   margin-right: 10px;
   margin-top: 58px; 
   text-decoration: none;
-  background: url("../img/sprite.png");
+  background: #e1e1e1 url("../img/sprite.png");
   background-repeat: no-repeat;
-  vertical-align: middle;
+  border-radius: 80px; 
 }
 
-.social-logotip-1 {
-  
+a.social-logotip-1 {     
   background-position: -10px -221px;
 }
 
-.social-logotip-2 {
- 
+a.social-logotip-2 { 
   background-position: -10px -256px;
 }
 
-.social-logotip-3 {
- 
+a.social-logotip-3 { 
   background-position: -10px -298px;
 }
 
