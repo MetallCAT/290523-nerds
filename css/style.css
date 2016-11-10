@@ -181,9 +181,28 @@ body {
 .slides-controls {
   position: absolute;  
   left: 535px;
-  top: 315px;    
+  top: 315px;
+  width: 110px;
+  height: 18px;
+ }
+
+input[type="radio"] {  
+  margin-right: 17px;
+  width: 18px;
+  height: 18px;
 }
 
+.shape-field-1 {
+    
+}
+
+.shape-field-2 {
+    
+}
+
+.shape-field-3 {
+    
+}
 
 .heading {
   margin: 0;  
