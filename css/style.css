@@ -15,8 +15,9 @@
 }
 
 @font-face {
-   font-family: "Roboto-Bold";
-   src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+   font-family: "Roboto-700";
+   src: url("../fonts/Roboto-700.woff2") format("woff2"),
+   src: url("../fonts/Roboto-700.woff") format("woff"); 
    font-weight: 700;
    font-style: normal;
 }
@@ -246,13 +247,13 @@ input[type="radio"] {
 }
 
 .options-item h3 {
-  font-family: "Roboto-Bold", "Tahoma", "sans-serif";
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 16px;
-  margin-bottom: 10pxp;  
+  margin-bottom: 10px;  
 }
 
 .options-item p {
@@ -307,7 +308,7 @@ input[type="radio"] {
 }
 
 .dignitys-description-1 h3 {
-  font-family: "Roboto-Bold", "Tahoma", "sans-serif";
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -348,7 +349,7 @@ input[type="radio"] {
 }
 
 .dignitys-description-2 h3 {
-  font-family: "Roboto-Bold", "Tahoma", "sans-serif";
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -469,6 +470,7 @@ input[type="radio"] {
   float: left;
   width: 360px;
   min-height: 220px;
+  font-size: 0;
 }
 
 .footer-social-left ul {
@@ -484,8 +486,7 @@ input[type="radio"] {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  position: relative;
-  font-size: 0;
+  position: relative;  
 }
 
 .social-list a {  
@@ -528,7 +529,7 @@ a.social-logotip-3 {
 }
 
 .footer-social-right h2 {
-  font-family: "Roboto-Bold", "Tahoma", "sans-serif";
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
