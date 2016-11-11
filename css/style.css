@@ -47,7 +47,7 @@ body {
 }
 
 .header-top {
-  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
+  font-family: "Roboto Medium", "Tahoma", "sans-serif";
   min-height: 65px;
   line-height: 30px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .slider-title {
-  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
+  font-family: "Roboto Medium", "Tahoma", "sans-serif";
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -164,7 +164,7 @@ body {
 }
 
 .slider-left a {
-  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
+  font-family: "Roboto Medium", "Tahoma", "sans-serif";
   color: #ffffff;
   background-color: #fb565a;
   text-decoration: none;
@@ -208,7 +208,7 @@ input[type="radio"] {
 
 .heading {
   margin-top: 6px;  
-  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
+  font-family: "Roboto Medium", "Tahoma", "sans-serif";
   font-weight: 500;
   padding-top: 70px;
   padding-bottom: 109px;
@@ -283,7 +283,7 @@ input[type="radio"] {
 }
 
 .dignitys-description-1 h1 {
-  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
+  font-family: "Roboto Medium", "Tahoma", "sans-serif";
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -491,39 +491,16 @@ input[type="radio"] {
   overflow: hidden;
 }
 
-/*.footer-social-left a {  
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-  margin-top: 58px; 
-  text-decoration: none;
-  background: #e1e1e1; 
-  border-radius: 50%; 
-}
-
-.footer-social-left span {
-  background: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  position: absolute;  
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 20px;
-}*/
-
 a.social-logotip-1 {     
-  background-position: -10px -221px;
+  background-position: -5px -206px;
 }
 
 a.social-logotip-2 { 
-  background-position: -10px -256px;
+  background-position: 0 -246px;
 }
 
 a.social-logotip-3 { 
-  background-position: -10px -298px;
+  background-position: 0px -288px;
 }
 
 .footer-social-right {
