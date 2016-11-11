@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "Roboto", "Tahoma", sans-serif;
+  font-family: "Roboto", "Tahoma", "sans-serif";
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -47,7 +47,7 @@ body {
 }
 
 .header-top {
-  font-family: "Roboto Medium"; "Tahoma", sans-serif;
+  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
   min-height: 65px;
   line-height: 30px;
 }
@@ -149,7 +149,7 @@ body {
 }
 
 .slider-title {
-  font-family: "Roboto Medium"; "Tahoma", sans-serif;
+  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -164,7 +164,7 @@ body {
 }
 
 .slider-left a {
-  font-family: "Roboto Medium"; "Tahoma", sans-serif;
+  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
   color: #ffffff;
   background-color: #fb565a;
   text-decoration: none;
@@ -208,7 +208,7 @@ input[type="radio"] {
 
 .heading {
   margin-top: 6px;  
-  font-family: "Roboto Medium"; "Tahoma", sans-serif;
+  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
   font-weight: 500;
   padding-top: 70px;
   padding-bottom: 109px;
@@ -283,7 +283,7 @@ input[type="radio"] {
 }
 
 .dignitys-description-1 h1 {
-  font-family: "Roboto Medium"; "Tahoma", sans-serif;
+  font-family: "Roboto Medium"; "Tahoma", "sans-serif";
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -454,7 +454,44 @@ input[type="radio"] {
   min-height: 220px;
 }
 
-.footer-social-left a {  
+.footer-social-left ul {
+  padding: 0;
+  margin-top: 70px;
+}
+
+.social-list li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 11px;
+  background: #e1e1e1; 
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.social-list a {  
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; 
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; 
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*.footer-social-left a {  
   display: inline-block;
   position: relative;
   vertical-align: top;
@@ -475,17 +512,17 @@ input[type="radio"] {
   height: 40px;
   margin-left: 20px;
   margin-top: 20px;
-}
+}*/
 
-span.social-logotip-1 {     
+a.social-logotip-1 {     
   background-position: -10px -221px;
 }
 
-span.social-logotip-2 { 
+a.social-logotip-2 { 
   background-position: -10px -256px;
 }
 
-span.social-logotip-3 { 
+a.social-logotip-3 { 
   background-position: -10px -298px;
 }
 

@@ -137,9 +137,11 @@
       </section>
       <section class="footer-social clearfix">
         <div class="footer-social-left">
-          <a class="social-logotip-1" href="http://vk.com/htmlacademy"><span>vk</span></a>
-          <a class="social-logotip-2" href="http://www.facebook.com/htmlacademy"><span>f</span></a>
-          <a class="social-logotip-3" href="http://twitter.com/htmlacademy_ru"><span>i</span></a>
+          <ul class="social-list">
+              <li></li><a class="social-logotip-1" href="http://vk.com/htmlacademy"><span>vk</span></a></li>
+              <li><a class="social-logotip-2" href="http://www.facebook.com/htmlacademy"><span>f</span></a></li>
+              <li><a class="social-logotip-3" href="http://twitter.com/htmlacademy_ru"><span>i</span></a></li>
+          </ul>
         </div>
         <div class="footer-social-right">
           <h2>Давайте дружить, это выгодно!</h2>
@@ -160,16 +162,16 @@
       </form>
     </div>-->          
     <div class="modal-window">
-        <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>
-        <h3 class="modal-window-title">Напишите нам</h3>
+        <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>        
         <form action="https://echo.htmlacademy.ru" method="get">
-            <label for="name-field-checkbox">Ваше имя:</label>
+            <h3 class="modal-window-title">Напишите нам</h3>
+            <label for="name-field">Ваше имя:</label>
             <input type="text" name="name" id="name-field" value="" placeholder="Представьтесь, пожалуйста">
             <label for="mail-field">Ваш e-mail:</label>
             <input type="text" name="mail" id="mail-field" value="" placeholder="Для отправки ответа">
             <label for="comment-letter">Текст письма:</label>
             <textarea name="letter" id="comment-letter" rows="3" placeholder="В свободной форме"></textarea>
-            <a href="#">ОТПРАВИТЬ</a>
+            <button type="submit">ОТПРАВИТЬ</button>
         </form>
     </div>
     <script>
