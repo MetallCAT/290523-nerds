@@ -530,6 +530,25 @@ span.social-logotip-3 {
     display: block;
 }
 
+.modal-window {
+  position: absolute;
+  top: ;
+  left: ;  
+  display: none;
+  width: 960px;
+  padding: 60px 100px;
+  margin-left: 240px;
+  color: #000000;
+  background: #ffffff;
+
+.modal-window-show {
+  display: block;
+}
+    
+.modal-window-close {
+
+}
+
 /*
 .sprite-basket {
     width: 15px;
