@@ -69,8 +69,7 @@ body {
 
 .main-navigation {
   float: left;
-  width: 440px;
-  display: inline-block;
+  width: 440px;  
   text-transform: uppercase;
   font-size: 0; 
 }
@@ -136,8 +135,7 @@ body {
   height: 431px;
 }
 
-.slider {
-    
+.slider {    
   font-size: 0;
   position: relative;
 }
@@ -188,9 +186,7 @@ body {
 }
 
 .slider-info img {
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin-left: 400px;
 }
 
 .slides-controls {
@@ -199,7 +195,7 @@ body {
   top: 317px;
   width: 110px;
   height: 18px;
- }
+}
 
 input[type="radio"] {  
   margin-right: 17px;
@@ -253,16 +249,16 @@ input[type="radio"] {
 
 .options-item h3 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
-  font-weight: 700;
+  font-weight: 700;  
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 19px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
+  color: #000000;
 }
 
-.options-item p {  
-  color: #283136;
+.options-item p { 
   width: 250px;
   margin-bottom: 46px; 
 }
@@ -303,7 +299,8 @@ input[type="radio"] {
   font-size: 45px;
   line-height: 45px;
   margin-top: 72px;
-  margin-bottom: 34px; 
+  margin-bottom: 34px;
+  color: #000000;
 }
 
 .dignitys-description-1 p {
@@ -316,8 +313,8 @@ input[type="radio"] {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 16px; 
+  color: #000000;
 }
 
 .dignitys-description-1 ul {  
@@ -325,8 +322,7 @@ input[type="radio"] {
   margin: 0;   
 }
 
-.dignitys-description-1 li {
-  color: #283136;
+.dignitys-description-1 li {  
   position: relative;
   list-style-type: none; 
   margin-top: 24px;
@@ -357,42 +353,50 @@ input[type="radio"] {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
+  margin-left: 12px;
+  font-size: 16px;  
+  color: #000000;
 }
 
-.dignitys-description-2 ul {
-  width: 360px;
-  height: 100px;
+.dignitys-description-2 ul { 
+  margin: 0;  
   padding: 0;
-  margin: 0;
 }
 
-.dignitys-description-2 li {
-  color: #283136;
+.dignitys-description-2 li { 
   line-height: 18px;
   list-style-type: none;
   display: inline-block; 
   vertical-align: top;
   width: 115px; 
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .dignitys-description-2 span {
   display: block;
   font-size: 45px;
-  line-height: 10,06px;
-  margin-bottom: 30px; 
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.dignitys-description-2 sup {
+  display: inline-block; 
+  font-size: 60%; 
 }
 
 .clients-logotips {
   vertical-align: middle;
   padding-top: 43px;
-  padding-bottom:45px;
+  padding-bottom: 45px;
   margin-top: 0;
   margin-bottom: 74px;
 }
+
+.clients-logotips img {
+  opacity: 0.2;
+} 
 
 .logotips-img1 {
   margin-left: 30px;
@@ -465,9 +469,30 @@ input[type="radio"] {
 }
 
 .contacts {
+  width: 320px;
   top: 55px;
   left: 140px;
   position: absolute;
+  background-color: #ffffff;
+  line-height: 18px;
+}
+
+.contacts b {
+  color: #000000;
+}
+
+.contacts b {
+  color: #666666;
+}
+
+.contacts a {  
+  color: #ffffff;
+  background-color: #fb565a;
+  text-decoration: none;
+  padding: 16px 54px;
+  text-transform: uppercase;
+  font-size: 16px;  
+  border-radius: 2px;   
 }
 
 .footer-social {
@@ -520,11 +545,11 @@ input[type="radio"] {
 }
 
 a.social-logotip-1 {     
-  background-position: -5px -206px;
+  background-position: -5px -208px;
 }
 
 a.social-logotip-2 { 
-  background-position: 2px -246px;
+  background-position: 2px -248px;
 }
 
 a.social-logotip-3 { 
@@ -544,16 +569,13 @@ a.social-logotip-3 {
   line-height: 36px;  
   margin-top: 68px;
   margin-bottom: 0;
+  color: #000000;
 }
 
 .footer-social-right p {
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
-}
-
-.popup {
-  display: none;
 }
 
 .slide-2 {
@@ -568,17 +590,10 @@ a.social-logotip-3 {
   display: none;
 }
 
-.sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
-}
-
 .modal-window {
-  position: absolute;
-  top: 1706px;
-  right: 100px; 
-  width: 960px;
+  position: fixed;
+  top: 30%; 
+  width: 760px;
   padding: 60px 100px;
   margin-left: 240px;
   color: #000000;
@@ -595,7 +610,8 @@ a.social-logotip-3 {
   font-size: 0;
   background-color: #ffffff;
   border: 0;
-  cursor: pointer; 
+  cursor: pointer;
+  color: #000000;
 }
 
 .modal-window-close::before,
@@ -631,7 +647,7 @@ a.social-logotip-3 {
 }
 
 .letter-form input[type="text"] {
-  width: 360px;
+  width: 320px;
   margin: 0;
   margin-bottom: 36px;
   padding: 16px 16px; 
@@ -641,13 +657,34 @@ a.social-logotip-3 {
 }
 
 .letter-form textarea {
-  width: 760px;
+  width: 720px;
   margin: 0;
   margin-bottom: 47px;
   padding: 16px 16px; 
   font-size: 16px;
   line-height: 18px;   
   border: 2px solid #d7dcde;
+}
+
+.letter-form label[for="name-field"] {  
+  opacity: 0.5; 
+  margin-bottom: 8px;
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.letter-form label[for="mail-field"] {   
+  margin-bottom: 8px;
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.letter-form label[for="comment-letter"] {
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .letter-form .btn {
