@@ -288,6 +288,12 @@ input[type="radio"] {
   min-height: 530px;  
 }
 
+.dignitys::before {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #eeeeee;
+}
+
 .dignitys-description-1 {
   float: left;
   width: 660px;    
@@ -413,8 +419,11 @@ input[type="radio"] {
   margin-bottom: 17px;
 }
 
-.logotips-img4 {
-
+.clients-logotips::before,
+.clients-logotips::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .content-left {  
@@ -429,18 +438,17 @@ input[type="radio"] {
   margin: 0;
 } 
 
-.content-left h2 {
+.left-column-1 h2 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 18px;
-  
+  margin-top: 18px; 
 }
 
 .range-filter {
-  width: 240px;
-  margin: 50px 0; 
+  width: 260px;
+  margin: 48px 0; 
 }
 
 .range-controls {
@@ -451,7 +459,7 @@ input[type="radio"] {
   padding-left: 20px;
   margin-bottom: 15px;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #eeeeee;
 }
 
 .range-controls .scale {
@@ -460,7 +468,7 @@ input[type="radio"] {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 150px;
   height: 2px;
   background: #00ca74;
 }
@@ -479,19 +487,17 @@ input[type="radio"] {
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
-}
-
-.price-controls {
-  font-size: 0;
+  left: 160px;
 }
 
 .price-controls label {
+  font-family: "Roboto", "Tahoma", "sans-serif";
   font-size: 16px;
+  line-height: 22px;
   display: inline-block;
   width: 50%;
 }
@@ -500,17 +506,23 @@ input[type="radio"] {
   text-align: right;
 }
 
-.price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  font-size: 16px;
+.price-controls input {  
   width: 60px;
   margin-left: 10px;
   padding: 8px 10px;
-  text-align: center;
-  color: #283136;
+  text-align: center;  
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: #eeeeee;
+}
+
+.left-column-2 h2 {
+  font-family: "Roboto-700", "Tahoma", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px; 
+  color: #000000;
+  margin-top: 8px;
 }
 
 .content-right {
@@ -559,7 +571,7 @@ input[type="radio"] {
 }
 
 .contacts {
-  width: 240px;  
+  width: 240px;
   top: 53px;
   left: 140px;
   position: absolute;
@@ -575,17 +587,20 @@ input[type="radio"] {
 
 .contacts p {
   opacity: 0.5;
-  margin-bottom: 15px;
+  margin-top: 28px;
+  margin-bottom: 0;
 }
 
-.contacts a {  
+.contacts a {
+  display: block; 
   color: #ffffff;
   background-color: #fb565a;
   text-decoration: none;
   padding: 16px 44px;
   text-transform: uppercase;
   font-size: 16px;  
-  border-radius: 2px;  
+  border-radius: 2px;
+  margin-top: 30px;
 }
 
 .footer-social {
@@ -738,11 +753,11 @@ a.social-logotip-3 {
 
 .letter-form .entry-field {
   width: 360px;
-  margin-right: 15px;
+  margin-right: 30px;
   display: inline-block;
 }
 
-.letter-form .entry-field:last-child {
+.letter-form .entry-field:last-of-type {
   margin-right: 0px;
 }
 
@@ -797,6 +812,7 @@ a.social-logotip-3 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  border: 0;
   border-radius: 2px;
   margin-bottom: 30px; 
 }
