@@ -83,7 +83,7 @@
           <button type="submit">Показать</button>
        </form>
        <div class="content-right">
-         <div class="list">
+         <div class="list clearfix">
            <h2>СОРТИРОВАТЬ:</h2>
            <ul class="item">
              <li>По цене</li>
@@ -98,6 +98,8 @@
              <a>down</a>
              <a href="#">up</a>
            </div>
+         </div>
+         <div class="slides-catalog">
          </div>
          <div class="catalog">
            <article class="catalog-item">
@@ -169,28 +171,67 @@
        </div>
      </section>
      <section class="footer-social clearfix">
-       <div class="footer-social-left">
-         <a class="social-logotip-1" href="#"></a>
-         <a class="social-logotip-2" href="#"></a>
-         <a class="social-logotip-3" href="#"></a>
-       </div>
-       <div class="footer-social-right">
-         <h2>Давайте дружить, это выгодно!</h2>
-         <p>Скидка 10% для друзей из социальных сетей.</p>
-       </div>
-     </section>
+        <div class="footer-social-left">
+          <ul class="social-list">
+              <li><a class="social-logotip-1" href="http://vk.com/htmlacademy"><span class="visually-hidden">vk</span></a></li>
+              <li><a class="social-logotip-2" href="http://www.facebook.com/htmlacademy"><span class="visually-hidden">f</span></a></li>
+              <li><a class="social-logotip-3" href="http://twitter.com/htmlacademy_ru"><span class="visually-hidden">i</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-social-right">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
    </footer>
-   <div class="popup">
-     <form action="https://echo.htmlacademy.ru" method="get">
-       <h3>Напишите нам</h3>
-       <label for="name-field">Ваше имя:</label>
-       <input type="text" name="name" id="name-field" value="" placeholder="Представьтесь, пожалуйста">
-       <label for="mail-field">Ваш e-mail:</label>
-       <input type="text" name="mail" id="mail-field" value="" placeholder="Для отправки ответа">
-       <label for="comment-letter">Текст письма:</label>
-       <textarea name="letter" id="comment-letter" rows="3" placeholder="В свободной форме"></textarea>
-       <a href="#">ОТПРАВИТЬ</a>
-     </form>
-   </div>
- </body>
+   <div class="modal-window">
+        <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>        
+        <form class="letter-form" action="https://echo.htmlacademy.ru" method="get">
+            <h3 class="modal-window-title">Напишите нам</h3>
+            <div class="entry-field">
+                <label for="name-field">Ваше имя:</label>
+                <input type="text" name="name" id="name-field" value="" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="entry-field">
+                <label for="mail-field">Ваш e-mail:</label>
+                <input type="text" name="mail" id="mail-field" value="" placeholder="Для отправки ответа">
+            </div>
+            <label for="comment-letter">Текст письма:</label>
+            <textarea name="letter" id="comment-letter" rows="4" placeholder="В свободной форме"></textarea>
+            <button class="btn" type="submit">ОТПРАВИТЬ</button>
+        </form>
+    </div>
+    <script>
+        var connect = document.querySelector(".write-to-us");
+        var popup = document.querySelector(".modal-window");
+        var close = popup.querySelector(".modal-window-close");
+        var name = popup.querySelector("[name=name]");
+        var form = popup.querySelector("form");
+        var mail = popup.querySelector("[name=mail]");
+        var letter = popup.querySelector("[name=letter]");
+        connect.addEventListener("click", function(event) {
+          event.preventDefault();
+          popup.classList.add("modal-window-show");
+          name.focus();
+        });
+        close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-window-show");
+        });
+        form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        });
+        if (!name.value || !male.value) {
+          event.preventDefault();
+          console.log("Нужно ввести имя и адресс почты"); 
+        });
+        window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-window-show")) {
+            popup.classList.remove("modal-window-show");
+          }
+        }
+        });      
+    </script>
+  </body>
 </html>

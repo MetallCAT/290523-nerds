@@ -456,7 +456,7 @@ input[type="radio"] {
 .content-left {  
   width: 260px;
   float: left;  
-  font-size: 0;
+  font-size: 0;  
 }
 
 .content-left fieldset {
@@ -552,17 +552,69 @@ input[type="radio"] {
   margin-top: 8px;
 }
 
+.left-column-2 input {
+  width: 25px;
+  height: 25px;
+  background: url("../img/point-1.png"); 
+}
+
+.left-column-2 label {
+  font-family: "Roboto", "Tahoma", "sans-serif"; 
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 35px;
+  margin-right: 10px;
+ }
+
 .content-right {
   width: 760px;
   float: right;
 }
 
-.list {
-
+.list h2 {
+  float: left;
+  font-family: "Roboto-700", "Tahoma", "sans-serif"; 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;  
+  margin-top: 21px;
+  margin-right: 240px;
 }
 
-.sort {
+.list ul {
+  float: left;
+  width: 280px;
+  font-family: "Roboto", "Tahoma", "sans-serif";  
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin-left: 18px;
+  margin-top: 23px;
+  opacity: 0.3;
+}
 
+.list li {
+  display: inline-block;  
+  margin-right: 25px;  
+}
+
+.list a {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.list a:hover {
+  opacity: 1;    
+}
+
+.list .sort a:hover {
+  opacity: 1;    
+}
+
+.list .sort {
+  float: right;  
+  width: 60px;
 }
 
 .catalog {
@@ -571,18 +623,55 @@ input[type="radio"] {
   font-size: 0;
 }
 
+.slides-catalog {
+  position: absolute;  
+  left: 0;
+  top: -40pxpx;
+  width: 360px;
+  height: 40px;
+}
+
 .catalog-item {
+  position: relative;
   display: inline-block;
   width: 360px;
   min-height: 616px;
   vertical-align: top;
   margin-right: 40px;
   margin-bottom: 40px;
-  font-size: 16px;
+  margin-top: 80px;
+  font-size: 16px;    
 }
 
 .catalog-item:nth-child(2n) {
-    margin-right: 0;
+  margin-right: 0;
+}
+
+.buy {
+  position: absolute;
+  background-color: #eeeeee;
+  width: 360px;
+  height: 230px;
+  bottom: 40px;
+  left: 0;
+  text-decoration: none;
+}
+
+.buy h2 {
+  font-family: "Roboto-700", "Tahoma", "sans-serif"; 
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px; 
+  color: #000000;
+  margin: 26px 143px;
+}
+
+.buy p {
+  margin: 0 80px; 
+}
+
+.buy span {
+  margin: 0 80px;   
 }
 
 .paginator {
