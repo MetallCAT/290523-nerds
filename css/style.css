@@ -563,6 +563,7 @@ input[type="radio"] {
   margin-right: 15px;
   margin-bottom: 18px;
   display: inline-block;
+  cursor: pointer;
  }
 
 .left-column-2 label::before {  
@@ -582,7 +583,7 @@ input[type="radio"] {
   display: none;
 }
 
-.left-column-2 input:checked + .left-column-2 label::before {
+.left-column-2 input:checked + label::before {
   position: absolute;
   content: "";
   background: url("../img/sprite.png");
@@ -613,7 +614,8 @@ input[type="radio"] {
   margin-top: 0;
   display: inline-block;
   width: 150px;
- }
+  cursor: pointer;    
+}
 
 .left-column-3 label::before {  
   position: absolute;
@@ -632,7 +634,7 @@ input[type="radio"] {
   display: none;
 }
 
-.left-column-3 input:checked + .left-column-3 label::before {
+.left-column-3 input:checked + label::before {
   position: absolute;
   content: "";
   background: url("../img/sprite.png");
@@ -644,14 +646,20 @@ input[type="radio"] {
   opacity: 0.4; 
 }
 
-.left-column-3 button[type="submit"] {
+.content-left button[type="submit"] {
   display:block;
+  font-family: "Roboto Medium", "Tahoma", "sans-serif"; 
+  font-weight: 500;
   width: 260px; 
   height: 50px;
   line-height: 18px;
   background: #eeeeee;
   color: 000000;
   padding: 18px 89px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 0;
 }
 
 .content-right {
@@ -702,10 +710,42 @@ input[type="radio"] {
 }
 
 .sort {
+  position: relative;
   float: right;  
   width: 60px;
   height: 20px;
   margin-top: 20px;
+}
+
+.sort::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px; 
+  top: 7px;
+  left: 20px;
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;  
+  background-position: -10px -339px;
+  cursor: pointer;
+}
+
+.sort::after {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px; 
+  top: 7px;
+  left: 50px;
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;  
+  background-position: -10px -368px;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.sort a {
+  display: none;
 }
 
 .catalog {
