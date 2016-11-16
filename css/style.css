@@ -184,6 +184,10 @@ body {
   border-radius: 2px; 
 }
 
+.slider-left a:hover {
+  background-color: #e74246;
+}
+
 .slider-info img {
   margin-left: 400px;
 }
@@ -287,6 +291,18 @@ input[type="radio"] {
 
 .presentations {
   background-color: #efc84a;
+}
+
+.web:hover {
+  background-color: #e74246;
+}
+
+.apps:hover {
+  background-color: #00bc6c;
+}
+
+.presentations:hover {
+  background-color: #eab534;
 }
 
 .dignitys {
@@ -425,7 +441,11 @@ input[type="radio"] {
 
 .clients-logotips img {  
   opacity: 0.2;
-} 
+}
+
+.clients-logotips img:hover {
+  opacity: 1;  
+}
 
 .logotips-img1 {
   margin-left: 30px;
@@ -662,6 +682,10 @@ input[type="radio"] {
   border: 0;
 }
 
+.content-left button[type="submit"]:hover {
+  background: #dfdfdf;  
+}
+
 .content-right {
   width: 760px;
   float: right;    
@@ -693,6 +717,10 @@ input[type="radio"] {
   display: inline-block;  
   margin-right: 23px;
   text-transform: uppercase;
+}
+
+.list li:hover {
+  opacity: 1;  
 }
 
 .item a {
@@ -744,6 +772,14 @@ input[type="radio"] {
   opacity: 0.2;
 }
 
+.sort .down:hover {
+  opacity: 0.4;    
+}
+
+.sort .up:hover {
+  opacity: 0.4;  
+}
+
 .catalog {
   width: 760px;
   margin-bottom: 20px;
@@ -760,6 +796,10 @@ input[type="radio"] {
   border: 3px solid white;
   vertical-align: middle;
   border-radius: 50%;    
+}
+
+.catalog-item .round:first-child {
+  margin-left: 16px;
 }
 
 .catalog-item { 
@@ -824,6 +864,10 @@ input[type="radio"] {
   text-transform: uppercase;
   margin-left: 80px;
   border-radius: 2px;  
+}
+
+.buy span:hover {
+  background-color: #e74246;  
 }
 
 .buy {
@@ -908,6 +952,10 @@ input[type="radio"] {
   position: relative;  
 }
 
+.social-list li:hover {
+  background: #e74246;    
+}
+
 .social-list a {  
   background: url("../img/sprite.png");
   background-repeat: no-repeat;
@@ -980,7 +1028,7 @@ a.social-logotip-3 {
   color: #000000;
   background: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  display: none;
+  
 }
     
 .modal-window-close {
@@ -995,6 +1043,11 @@ a.social-logotip-3 {
   cursor: pointer;
   color: #000000;
 }
+
+/*.modal-window-close::before,
+.modal-window-close::after:hover {
+  background-color: #fb565a;  
+}*/
 
 .modal-window-close::before,
 .modal-window-close::after {
@@ -1048,6 +1101,10 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
+.letter-form input[type="text"]:hover {
+  border: 2px solid #b4b9bb;  
+}
+
 .letter-form textarea {
   width: 725px;
   margin: 0;
@@ -1065,6 +1122,10 @@ a.social-logotip-3 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   font-size: 16px;
+}
+
+.letter-form label[for="name-field"]:hover {
+  opacity: 1;
 }
 
 .letter-form label[for="mail-field"] {   
