@@ -104,19 +104,14 @@ body {
   text-decoration: none;  
 }
 
-.main-navigation a:hover {
-  color: #f87478;
-}
-
 .main-navigation a:active {
   opacity: 0.3; 
   color: #000000;
 }
 
-/*.main-navigation a:active {
-  color: #000000;  
-  border-bottom: 2px solid #fb565a;
-}*/
+.main-navigation a[href]:hover {
+  color: #f87478;  
+}
 
 .user-block {
   float: right;
@@ -141,11 +136,6 @@ body {
   opacity: 0.3; 
   color: #000000;
 }
-
-/*.basket:active {
-  color: #000000;  
-  border-bottom: 2px solid #fb565a;
-}*/
 
 .basket::before {
   content: "";
@@ -837,7 +827,7 @@ input[type="radio"] {
   text-transform: uppercase;
 }
 
-.list li:hover {
+.list li[href]:hover {
   opacity: 0.4;  
 }
 
@@ -859,7 +849,8 @@ input[type="radio"] {
   margin-top: 20px;  
 }
 
-.sort .down {
+.sort .down,
+.sort .down:hover {
   position: absolute;
   content: "";
   width: 9px;
@@ -868,8 +859,7 @@ input[type="radio"] {
   left: 20px;
   background: url("../img/sprite.png");
   background-repeat: no-repeat;  
-  background-position: -10px -339px;
-  cursor: pointer;  
+  background-position: -10px -339px;    
 }
 
 .sort .up { 
@@ -886,14 +876,8 @@ input[type="radio"] {
   opacity: 0.2;
 }
 
-.sort .down:hover,
 .sort .up:hover {
   opacity: 0.4;    
-}
-
-.sort .down:focus,
-.sort .up:focus {
-  opacity: 1;    
 }
 
 .catalog {
@@ -995,7 +979,7 @@ input[type="radio"] {
 }
 
 .buy {
-  /*display: none;*/
+  display: none;
 }
 
 .catalog-item:hover .buy {
@@ -1031,24 +1015,24 @@ input[type="radio"] {
 
 .active {
   width: 50px;
-  height: 50px;
-  padding: 15px 18px;
+  height: 50px;  
   background-color: #ffffff;    
 }
 
 .number {
   width: 50px;
-  height: 50px;
-  padding: 18px 21px;  
+  height: 50px;  
+  padding: 18px 21px;      
 }
 
 .next {
   width: 260px;
   height: 50px;
-  padding: 18px 79px;     
+  padding: 18px 79px;    
 }
 
-.paginator .active {
+.paginator .active,
+.paginator .active:hover {
   background-color: #ffffff; 
   padding: 18px 21px;
   border-color: #dbdbdb;    
@@ -1056,14 +1040,14 @@ input[type="radio"] {
 
 .paginator a:hover {
   background-color: #dfdfdf;
-  border-color: #dbdbdb; 
+  border-color: #dfdfdf; 
 }
 
 .paginator a:active {
   background: #d5d5d5; 
-  color: #959595;
-  border-color: #d5d5d5;     
-  border-top: 3px solid #bfbfbf;        
+  color: #959595;  
+  border: 3px solid #d5d5d5;     
+  border-top: 3px solid #bfbfbf;
 }
 
 .main-footer {
