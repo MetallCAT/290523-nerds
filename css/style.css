@@ -949,6 +949,10 @@ input[type="radio"] {
   left: 0;
 }
 
+.buy h2 {
+  margin: 0;  
+}
+
 .buy a {
   font-family: "Roboto-700", "Tahoma", "sans-serif"; 
   font-weight: 700;
@@ -957,15 +961,15 @@ input[type="radio"] {
   color: #000000;  
   text-decoration: none;
   text-align: center;
-  margin-top: 27px;
-  margin-bottom: -11px;
+  margin-top: 27px;  
   display: block;
 }
 
 .buy p {
   text-align: center;     
-  margin-bottom: 39px;
-  color: #666666;    
+  margin-bottom: 45px;
+  color: #666666;
+  line-height: 1;    
 }
 
 .buy span {
@@ -1021,41 +1025,45 @@ input[type="radio"] {
   margin-right: 11px;
   border-radius: 2px;
   text-transform: uppercase;
+  box-sizing: border-box;
+  border: 3px solid #eeeeee;
 }
 
 .active {
-  width: 8px;
-  height: 14px;
+  width: 50px;
+  height: 50px;
   padding: 15px 18px;
-  background-color: #ffffff;
-  border: 3px solid #dbdbdb;   
+  background-color: #ffffff;    
 }
 
 .number {
-  width: 8px;
-  height: 14px;
-  padding: 18px 21px;
+  width: 50px;
+  height: 50px;
+  padding: 18px 21px;  
 }
 
 .next {
-  width: 102px;
-  height: 14px;
-  padding: 18px 79px;
+  width: 260px;
+  height: 50px;
+  padding: 18px 79px;     
+}
+
+.paginator .active {
+  background-color: #ffffff; 
+  padding: 18px 21px;
+  border-color: #dbdbdb;    
 }
 
 .paginator a:hover {
-  background-color: #dfdfdf;  
+  background-color: #dfdfdf;
+  border-color: #dbdbdb; 
 }
 
 .paginator a:active {
   background: #d5d5d5; 
   color: #959595;
-  border-top: 3px solid #bfbfbf;
-}
-
-.paginator a:focus {
-  background-color: #ffffff;
-  border: 3px solid #dbdbdb;
+  border-color: #d5d5d5;     
+  border-top: 3px solid #bfbfbf;        
 }
 
 .main-footer {
@@ -1067,20 +1075,30 @@ input[type="radio"] {
 }
 
 .contacts {
-  width: 240px;
-  top: 53px;
+  width: 220px;
+  height: 210px;
+  top: 54px;
   left: 140px;
   position: absolute;
   background-color: #ffffff;
   line-height: 18px;
   color: #000000;  
-  padding: 54px 50px;
+  padding: 50px 50px;
+}
+
+.contacts b {
+  display: block;
+  margin-top: 5px;
 }
 
 .contacts p {
   opacity: 0.5;
-  margin-top: 28px;
-  margin-bottom: 0;
+  margin-top: 31px;
+  margin-bottom: 0;      
+}
+
+.contacts .phone {
+  margin-top: 16px;  
 }
 
 .contacts a {
@@ -1092,7 +1110,7 @@ input[type="radio"] {
   text-transform: uppercase;
   font-size: 16px;  
   border-radius: 2px;
-  margin-top: 30px;
+  margin-top: 36px;
   width: 132px;
 }
 
