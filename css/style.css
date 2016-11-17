@@ -65,6 +65,15 @@ body {
   width: 160px;
   margin-right: 200px;
   height: 65px;
+  color: #000000;  
+}
+
+.logo:hover {
+  opacity: 0.8;  
+}
+
+.logo:active {
+  opacity: 0.3;
 }
 
 .main-navigation {
@@ -100,9 +109,14 @@ body {
 }
 
 .main-navigation a:active {
+  opacity: 0.3; 
+  color: #000000;
+}
+
+/*.main-navigation a:active {
   color: #000000;  
   border-bottom: 2px solid #fb565a;
-}
+}*/
 
 .user-block {
   float: right;
@@ -124,9 +138,14 @@ body {
 }
 
 .basket:active {
+  opacity: 0.3; 
+  color: #000000;
+}
+
+/*.basket:active {
   color: #000000;  
   border-bottom: 2px solid #fb565a;
-}
+}*/
 
 .basket::before {
   content: "";
@@ -206,6 +225,11 @@ body {
 
 .slider-left a:hover {
   background-color: #e74246;
+}
+
+.slider-left a:active {
+  background-color: #e74246;
+  color: #e37376;
 }
 
 .slider-info img {
@@ -354,6 +378,21 @@ input[type="radio"] {
   background-color: #eab534;
 }
 
+.web:active {
+  background-color: #e74246;
+  color: #e37376;
+}
+
+.apps:active {
+  background-color: #00aa62;
+  color: #4dc491;
+}
+
+.presentations:active {
+  background-color: #e5a722;
+  color: #edc265;
+}
+
 .dignitys {
   min-height: 530px;
   position: relative;
@@ -494,6 +533,10 @@ input[type="radio"] {
 
 .clients-logotips img:hover {
   opacity: 1;  
+}
+
+.clients-logotips img:active {
+  opacity: 0.1;  
 }
 
 .logotips-img1 {
@@ -664,6 +707,16 @@ input[type="radio"] {
   opacity: 0.4; 
 }
 
+.left-column-2 label:hover::before,
+.left-column-2 input:checked + label:hover::before {
+   opacity: 1;    
+}
+
+.left-column-2 label:disabled::before,
+.left-column-2 input:checked + label:disabled::before {
+   opacity: 0.1;    
+}
+
 .left-column-3 h2 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
@@ -699,6 +752,16 @@ input[type="radio"] {
   opacity: 0.4;  
 }
 
+.left-column-3 label:hover::before,
+.left-column-3 input:checked + label:hover::before {
+   opacity: 1;    
+}
+
+.left-column-3 label:disabled::before,
+.left-column-3 input:checked + label:disabled::before {
+   opacity: 0.1;    
+}
+
 .left-column-3 input {
   display: none;
 }
@@ -725,7 +788,7 @@ input[type="radio"] {
   background: #eeeeee;
   color: 000000;
   padding: 18px 89px;
-  margin-top: 32px;
+  margin-top: 30px;
   text-transform: uppercase;
   border-radius: 2px;
   border: 0;
@@ -733,6 +796,12 @@ input[type="radio"] {
 
 .content-left button[type="submit"]:hover {
   background: #dfdfdf;  
+}
+
+.content-left button[type="submit"]:active {
+  background: #d5d5d5; 
+  color: #959595;
+  border-top: 3px solid #bfbfbf;
 }
 
 .content-right {
@@ -772,7 +841,7 @@ input[type="radio"] {
   opacity: 0.4;  
 }
 
-.list li:active {
+.list li:focus {
   opacity: 1;  
 }
 
@@ -817,20 +886,14 @@ input[type="radio"] {
   opacity: 0.2;
 }
 
-.sort .down:hover {
+.sort .down:hover,
+.sort .up:hover {
   opacity: 0.4;    
 }
 
-.sort .up:hover {
-  opacity: 0.4;  
-}
-
-.sort .down:active {
+.sort .down:focus,
+.sort .up:focus {
   opacity: 1;    
-}
-
-.sort .up:active {
-  opacity: 1;  
 }
 
 .catalog {
@@ -895,14 +958,14 @@ input[type="radio"] {
   text-decoration: none;
   text-align: center;
   margin-top: 27px;
-  margin-bottom: 0;
+  margin-bottom: -11px;
   display: block;
 }
 
 .buy p {
-  text-align: center;   
-  margin-bottom: 28px;
-  color: #666666;
+  text-align: center;     
+  margin-bottom: 39px;
+  color: #666666;    
 }
 
 .buy span {
@@ -921,6 +984,10 @@ input[type="radio"] {
 
 .buy span:hover {
   background-color: #e74246;  
+}
+
+.buy span:active {
+  background-color: #d7373b;  
 }
 
 .buy {
@@ -981,6 +1048,12 @@ input[type="radio"] {
 }
 
 .paginator a:active {
+  background: #d5d5d5; 
+  color: #959595;
+  border-top: 3px solid #bfbfbf;
+}
+
+.paginator a:focus {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
@@ -1023,6 +1096,15 @@ input[type="radio"] {
   width: 132px;
 }
 
+.contacts a:hover {
+  background-color: #e74246;
+}
+
+.contacts a:active {
+  background-color: #e74246;
+  color: #e37376;
+}
+
 .footer-social {
   width: 1160px;
   margin: 0 auto;  
@@ -1053,6 +1135,11 @@ input[type="radio"] {
 
 .social-list li:hover {
   background: #e74246;    
+}
+
+.social-list li:active {
+  background-color: #e74246;
+  color: #e37376;
 }
 
 .social-list a {  
@@ -1136,14 +1223,6 @@ a.social-logotip-3 {
   color: #000000;
 }
 
-.modal-window-close:hover::before {
-  background-color: #fb565a;  
-}
-
-.modal-window-close:hover::after {
-  background-color: #fb565a;  
-}
-
 .modal-window-close::before,
 .modal-window-close::after {
   content: "";
@@ -1162,6 +1241,16 @@ a.social-logotip-3 {
 
 .modal-window-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-window-close:hover::before,
+.modal-window-close:hover::after { 
+  background-color: #fb565a;
+}
+
+.modal-window-close:active::before,
+.modal-window-close:active::after {
+  background-color: #ffeeee;  
 }
 
 .modal-window h3 {
@@ -1194,14 +1283,6 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
-.letter-form input[type="text"]:hover {
-  border: 2px solid #b4b9bb;  
-}
-
-.letter-form input[type="text"]:active {
-  border: 2px solid #000000;  
-}
-
 .letter-form textarea {
   width: 730px;
   margin: 0;
@@ -1214,19 +1295,31 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
-.letter-form label[for="name-field"] {  
-  opacity: 0.5;
+.letter-form input[type="text"]:hover,
+.letter-form input[type="email"]:hover,
+.letter-form textarea:hover {
+  border: 2px solid #b4b9bb;  
+}
+
+.letter-form input[type="text"]:focus,
+.letter-form input[type="email"]:focus,
+.letter-form textarea:focus {
+  border: 2px solid #000000;
+  outline: 2px solid #000000;
+  color: #000000;
+}
+
+.letter-form input[type="text"]:invalid,
+.letter-form input[type="email"]:invalid,
+.letter-form textarea:invalid {
+  border: 2px solid #e74246;
+  color: ##e74246;  
+}
+
+.letter-form label[for="name-field"] { 
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
   font-size: 16px;
-}
-
-.letter-form label[for="name-field"]:hover {
-  opacity: 1;
-}
-
-.letter-form label[for="name-field"]:active {
-  opacity: 1;
 }
 
 .letter-form label[for="mail-field"] {   
@@ -1256,6 +1349,15 @@ a.social-logotip-3 {
   border-radius: 2px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+.letter-form .btn:hover {
+  background-color: #e74246;  
+}
+
+.letter-form .btn:active {
+  background-color: #d7373b;
+  color: #e37376;
 }
     
 .modal-window-show {
