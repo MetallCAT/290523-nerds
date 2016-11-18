@@ -1042,11 +1042,12 @@ input[type="radio"] {
 }
 
 .main-footer {
-  width: 1440px;
+  width: 1440px;     
 }
 
 .footer-contacts {
   position: relative;
+  background: url("../img/map-marker.jpg");    
 }
 
 .contacts {
@@ -1188,6 +1189,33 @@ a.social-logotip-3 {
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
 
 .modal-window {
@@ -1355,6 +1383,7 @@ a.social-logotip-3 {
     
 .modal-window-show {
   display: block;
+  animation: swing 0.4s;    
 }   
 
 /*
