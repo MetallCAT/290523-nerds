@@ -134,7 +134,7 @@
           <b>NЁRDS DESIGN STUDIO</b>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="write-to-us" href="#">Напишите нам</a>
+          <a class="write-to-us js-open-map" href="#">Напишите нам</a>
         </div>
       </section>
       <section class="footer-social clearfix">
@@ -167,7 +167,13 @@
             <textarea name="letter" id="comment-letter" rows="4" placeholder="В свободной форме"></textarea>
             <button class="btn" type="submit">ОТПРАВИТЬ</button>
         </form>
-    </div>    
-    <script src="js/script.js"></script>  
+    </div>
+    <div class="modal-window-map">
+      <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894616356888!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1479474933296" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="yandex-map"></div>    
+    </div>  
+    <script src="js/script.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=oQ3CLWBacvsEE7-q_1BcBDm4KL37PE5M&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true;id=yandex-map"></script>   
   </body>
 </html>
