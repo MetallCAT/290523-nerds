@@ -1042,18 +1042,18 @@ input[type="radio"] {
 }
 
 .main-footer {
-  width: 1440px;     
+  width: 1440px;    
 }
 
 .footer-contacts {
   position: relative;
-  background: url("../img/map-marker.jpg");    
+  background: url("../img/map-marker.jpg") no-repeat; 
 }
 
 .contacts {
   width: 220px;
-  height: 210px;
-  top: 54px;
+  height: 208px;
+  top: 53px;
   left: 140px;
   position: absolute;
   background-color: #ffffff;
@@ -1069,7 +1069,7 @@ input[type="radio"] {
 
 .contacts p {
   opacity: 0.5;
-  margin-top: 31px;
+  margin-top: 29px;
   margin-bottom: 0;      
 }
 
@@ -1086,7 +1086,7 @@ input[type="radio"] {
   text-transform: uppercase;
   font-size: 16px;  
   border-radius: 2px;
-  margin-top: 36px;
+  margin-top: 37px;  
   width: 132px;
 }
 
