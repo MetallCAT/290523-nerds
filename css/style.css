@@ -255,18 +255,22 @@ body {
 
 .slides-controls label {
   display:inline-block;
-  width : 13px;
-  height: 13px;
-  margin: 0;
-  margin-right: 23px;
-  margin-top: 3px;
+  width : 8px;
+  height: 8px;
+  margin: 0;  
+  margin-right: 27px;
+  margin-top: 6px;
   background: #ffffff;  
   vertical-align: top;
   border-radius: 50%;      
   cursor: pointer;
   position: relative;
-  box-shadow: 0 0 0 3px #ffffff; 
+  box-shadow: 0 0 0 5px #ffffff;
   box-sizing: border-box; 
+}
+
+.slides-controls label:first-child {
+  margin-left: 5px;
 }
 
 #shape-field-1:checked ~ .slides-controls label[for="shape-field-1"],
@@ -539,7 +543,7 @@ input[type="radio"] {
 }
 
 .clients-logotips img {  
-  opacity: 0.2;
+  opacity: 0.2;  
 }
 
 .clients-logotips img:hover {
@@ -553,7 +557,7 @@ input[type="radio"] {
 .logotips-img1 {
   margin-left: 30px;
   margin-right: 93px;
-  margin-bottom: 9px;
+  margin-bottom: 9px;      
 }
 
 .logotips-img2 {
@@ -562,21 +566,19 @@ input[type="radio"] {
 
 .logotips-img3 {
   margin-right: 117px;
-  margin-bottom: 17px;
+  margin-bottom: 17px;  
 }
 
 .clients-logotips::before {
   position: absolute;
   content: "";
   display: block;
-  background-color: #eeeeee; 
+  background-color: #eeeeee;
   width: 2px;
   height: 52px;
   top: 58px;
-  left: 278px;      
+  left: 278px;    
 }
-
-/*.clients-logotips::before repeat-х(298px);*/ 
 
 .clients-logotips::after {
   position: absolute;
@@ -587,6 +589,28 @@ input[type="radio"] {
   height: 2px;
   top: 174px;
   left: 0;    
+}
+
+.clients-logotips a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #eeeeee;
+  width: 2px;
+  height: 52px;
+  top: 58px;
+  left: 578px;    
+}
+
+.clients-logotips a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #eeeeee;
+  width: 2px;
+  height: 52px;
+  top: 58px;
+  left: 878px;    
 }
 
 .content-left {  
@@ -967,11 +991,10 @@ input[type="radio"] {
   position: absolute;  
   background-color: #eeeeee;
   width: 360px;
-  height: 230px; 
+  min-height: 230px; 
   text-decoration: none;
   bottom: 0;
-  left: 0;
-  word-break: break-all;   
+  left: 0;     
 }
 
 .buy h2 {
