@@ -15,11 +15,11 @@
 }
 
 @font-face {
-   font-family: "Roboto-700";
-   src: url("../fonts/Roboto-700.woff2") format("woff2"),
-        url("../fonts/Roboto-700.woff") format("woff"); 
-   font-weight: 700;
-   font-style: normal;
+  font-family: "Roboto-700";
+  src: url("../fonts/Roboto-700.woff2") format("woff2"),
+       url("../fonts/Roboto-700.woff") format("woff"); 
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
@@ -281,7 +281,7 @@ input[type="radio"] {
 }
 
 #shape-field-1:checked ~ .slides .slider-info:nth-child(1) {
-    display: block;
+  display: block;
 }
 
 #shape-field-2:checked ~ .slides .slider-info:nth-child(2) {
@@ -564,6 +564,19 @@ input[type="radio"] {
   margin-right: 117px;
   margin-bottom: 17px;
 }
+
+.clients-logotips::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #eeeeee; 
+  width: 2px;
+  height: 52px;
+  top: 58px;
+  left: 278px;      
+}
+
+/*.clients-logotips::before repeat-х(298px);*/ 
 
 .clients-logotips::after {
   position: absolute;
@@ -903,6 +916,10 @@ input[type="radio"] {
   opacity: 0.4;    
 }
 
+.sort .up:focus {
+  opacity: 1;    
+}
+
 .catalog {
   width: 760px;
   margin-bottom: 60px;
@@ -954,6 +971,7 @@ input[type="radio"] {
   text-decoration: none;
   bottom: 0;
   left: 0;
+  word-break: break-all;   
 }
 
 .buy h2 {
@@ -976,7 +994,7 @@ input[type="radio"] {
   text-align: center;     
   margin-bottom: 45px;
   color: #666666;
-  line-height: 1;    
+  line-height: 1;     
 }
 
 .buy span {
@@ -1361,7 +1379,7 @@ a.social-logotip-3 {
 .letter-form textarea:focus {
   border: 2px solid #000000;
   outline: 2px solid #000000;
-  color: #000000;
+  color: #444444;
 }
 
 .letter-form input[type="text"]:invalid,
@@ -1423,5 +1441,4 @@ a.social-logotip-3 {
 .modal-window-show {
   display: block;
   animation: swing 0.4s;    
-}  
-
+}

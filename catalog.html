@@ -41,7 +41,7 @@
    </header>
    <main class="main">
      <div class="container clearfix">
-       <form class="content-left">
+       <form class="content-left" action="#">
          <fieldset class="left-column-1">
            <h2>СТОИМОСТЬ:</h2>           
            <div class="range-filter">
@@ -106,7 +106,7 @@
              <span class="round"></span>    
              <img src="img/img-sedona.jpg" alt="Сайт для туристов" width="360" height="576">
              <div class="buy">
-               <h2><a href="#">Sedona</a></h2>
+               <h2><a href="#">SEDONA</a></h2>
                <p>Информационный сайт<br> для туристов</p>
                <span class="btn">9900 руб.</span>
              </div>
@@ -187,35 +187,35 @@
        </div>
      </section>
      <section class="footer-social clearfix">
-        <div class="footer-social-left">
-          <ul class="social-list">
-              <li><a class="social-logotip-1" href="http://vk.com/htmlacademy"><span class="visually-hidden">vk</span></a></li>
-              <li><a class="social-logotip-2" href="http://www.facebook.com/htmlacademy"><span class="visually-hidden">f</span></a></li>
-              <li><a class="social-logotip-3" href="http://twitter.com/htmlacademy_ru"><span class="visually-hidden">i</span></a></li>
-          </ul>
-        </div>
-        <div class="footer-social-right">
-          <h2>Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </section>
+       <div class="footer-social-left">
+         <ul class="social-list">
+           <li><a class="social-logotip-1" href="http://vk.com/htmlacademy"><span class="visually-hidden">vk</span></a></li>
+           <li><a class="social-logotip-2" href="http://www.facebook.com/htmlacademy"><span class="visually-hidden">f</span></a></li>
+           <li><a class="social-logotip-3" href="http://twitter.com/htmlacademy_ru"><span class="visually-hidden">i</span></a></li>
+         </ul>
+       </div>
+       <div class="footer-social-right">
+         <h2>Давайте дружить, это выгодно!</h2>
+         <p>Скидка 10% для друзей из социальных сетей.</p>
+       </div>
+     </section>
    </footer>
    <div class="modal-window">
-        <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>        
-        <form class="letter-form" action="https://echo.htmlacademy.ru" method="get">
-            <h3 class="modal-window-title">Напишите нам</h3>
-            <div class="entry-field">
-                <label for="name-field">Ваше имя:</label>
-                <input type="text" name="name" id="name-field" value="" placeholder="Представьтесь, пожалуйста">
-            </div>
-            <div class="entry-field">
-                <label for="mail-field">Ваш e-mail:</label>
-                <input type="email" name="mail" id="mail-field" value="" placeholder="Для отправки ответа">
-            </div>
-            <label for="comment-letter">Текст письма:</label>
-            <textarea name="letter" id="comment-letter" rows="4" placeholder="В свободной форме"></textarea>
-            <button class="btn" type="submit">ОТПРАВИТЬ</button>
-        </form>
+     <button class="modal-window-close" type="button" title="Закрыть">Закрыть</button>        
+       <form class="letter-form" action="https://echo.htmlacademy.ru" method="get">
+         <h3 class="modal-window-title">Напишите нам</h3>
+         <div class="entry-field">
+           <label for="name-field">Ваше имя:</label>
+           <input type="text" name="user_name" id="name-field" value="" placeholder="Представьтесь, пожалуйста" required>
+         </div>
+         <div class="entry-field">
+           <label for="mail-field">Ваш e-mail:</label>
+           <input type="email" name="mail" id="mail-field" value="" placeholder="Для отправки ответа" required>
+         </div>
+           <label for="comment-letter">Текст письма:</label>
+           <textarea name="letter" id="comment-letter" rows="4" placeholder="В свободной форме"></textarea>
+           <button class="btn" type="submit">ОТПРАВИТЬ</button>
+       </form>
     </div>   
     <script src="js/script.js"></script>  
   </body>

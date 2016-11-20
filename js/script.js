@@ -3,8 +3,7 @@
   var close = popup.querySelector(".modal-window-close");
   var form = popup.querySelector("form");
   var name = popup.querySelector("[name=user_name]");      
-  var mail = popup.querySelector("[name=mail]");
-  var letter = popup.querySelector("[name=letter]");
+  var mail = popup.querySelector("[name=mail]");  
 
   connect.addEventListener("click", function(event) {
     event.preventDefault();
@@ -20,7 +19,7 @@
   form.addEventListener("submit", function(event) {
     if (!user_name.value || !mail.value) {  
       event.preventDefault();
-      console.log("Нужно ввести имя и адресс почты");
+      alert("Нужно ввести имя и адресс почты");
     }   
   });     
 
@@ -31,5 +30,3 @@
       }
     }
   });
-
-
