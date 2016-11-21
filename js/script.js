@@ -17,7 +17,7 @@
   });
 
   form.addEventListener("submit", function(event) {
-    if (!name.value || !mail.value) {  
+    if (!user_name.value || !mail.value) {  
       event.preventDefault();
       alert("Нужно ввести имя и адрес почты");
     }   
