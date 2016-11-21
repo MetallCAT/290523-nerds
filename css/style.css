@@ -1392,6 +1392,26 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
+.letter-form input::-webkit-input-placeholder {
+  color: #a1a1a1;   
+}
+
+.letter-form input::-moz-placeholder {
+  color: #a1a1a1;   
+}
+
+.letter-form input::-ms-input-placeholder {
+  color: #a1a1a1;   
+}
+
+.letter-form input {
+  color: #a1a1a1;   
+}
+
+.letter-form textarea {
+  color: #a1a1a1;   
+}
+
 .letter-form input:focus::-webkit-input-placeholder {
   color: #444444;   
 }
@@ -1400,7 +1420,7 @@ a.social-logotip-3 {
   color: #444444;  
 }
 
-.letter-form input:focus::-ms-input-placeholder {
+.letter-form input:focus:-ms-input-placeholder {
   color: #444444;      
 }
 
@@ -1420,7 +1440,7 @@ a.social-logotip-3 {
   color: #e74246;  
 }
 
-.letter-form input:invalid::-ms-input-placeholder {
+.letter-form input:invalid:-ms-input-placeholder {
   color: #e74246;      
 }
 
@@ -1437,7 +1457,8 @@ a.social-logotip-3 {
 .letter-form input[type="text"]:focus,
 .letter-form input[type="email"]:focus,
 .letter-form textarea:focus {  
-  outline: 2px solid #000000;     
+  outline: none;
+  border: 2px solid #000000;      
 }
 
 .letter-form input[type="text"]:invalid,
