@@ -1392,19 +1392,14 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
-/*.letter-form input[placeholder],
-.letter-form textarea[placeholder] {
-  
-}
-
-.letter-form input[placeholder]:focus,
-.letter-form textarea[placeholder]:focus {
+.letter-form input::placeholder:focus,
+.letter-form textarea::placeholder:focus {
   color: #444444;      
 }
 
-.letter-form input[placeholder]:invalid {
+.letter-form input::placeholder:invalid {
   color: #e74246;     
-}*/
+}
 
 .letter-form input[type="text"]:hover,
 .letter-form input[type="email"]:hover,

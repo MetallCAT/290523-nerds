@@ -8,7 +8,7 @@
   connect.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("modal-window-show");
-    name.focus();
+    user_name.focus();
   });
 
   close.addEventListener("click", function(event) {
