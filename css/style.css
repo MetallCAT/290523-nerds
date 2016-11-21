@@ -266,7 +266,7 @@ body {
   cursor: pointer;
   position: relative;
   box-shadow: 0 0 0 5px #ffffff;
-  box-sizing: border-box; 
+  box-sizing: border-box;   
 }
 
 .slides-controls label:first-child {
@@ -276,7 +276,7 @@ body {
 #shape-field-1:checked ~ .slides-controls label[for="shape-field-1"],
 #shape-field-2:checked ~ .slides-controls label[for="shape-field-2"],
 #shape-field-3:checked ~ .slides-controls label[for="shape-field-3"] { 
-  border: 4px solid #c2c2c2; 
+  border: 2px solid #c2c2c2; 
   background-color: #ffffff;    
 }
 
