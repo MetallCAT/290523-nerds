@@ -1394,54 +1394,34 @@ a.social-logotip-3 {
   border-radius: 2px;      
 }
 
-.letter-form input::-webkit-input-placeholder {
+.letter-form input::-webkit-input-placeholder,
+.letter-form textarea::-webkit-input-placeholder {
   color: #a1a1a1;      
 }
 
-.letter-form input::-moz-placeholder {
+.letter-form input::-moz-placeholder,
+.letter-form textarea::-moz-placeholder {
   color: #a1a1a1;      
 }
 
-.letter-form input::-ms-input-placeholder {
+.letter-form input::-ms-input-placeholder,
+.letter-form textarea::-ms-input-placeholder {
   color: #a1a1a1;      
 }
 
-.letter-form input::placeholder {
+.letter-form input:-ms-input-placeholder,
+.letter-form textarea:-ms-input-placeholder {
   color: #a1a1a1;      
 }
 
+.letter-form input::placeholder,
 .letter-form textarea::placeholder {
   color: #a1a1a1;      
 }
 
-.letter-form input:focus::-webkit-input-placeholder {
-  color: #444444;
-  opacity: 1;    
-}
-
-.letter-form input:focus::-moz-placeholder {
-  color: #444444;
-  opacity: 1;   
-}
-
-.letter-form input:focus::-ms-input-placeholder {
-  color: #444444;
-  opacity: 1;     
-}
-
-.letter-form input:focus:-ms-input-placeholder {
-  color: #444444;
-  opacity: 1;     
-}
-
-.letter-form input:focus::placeholder {
-  color: #444444;
-  opacity: 1;     
-}
-
-.letter-form textarea:focus::placeholder {
-  color: #444444;
-  opacity: 1;     
+.letter-form input[type="text"]:invalid,
+.letter-form input[type="email"]:invalid {
+  border: 2px solid #e74246;    
 }
 
 .letter-form input:invalid::-webkit-input-placeholder {
@@ -1450,6 +1430,11 @@ a.social-logotip-3 {
 }
 
 .letter-form input:invalid::-moz-placeholder {
+  color: #e74246;
+  opacity: 1;    
+}
+
+.letter-form input:invalid::-ms-input-placeholder {
   color: #e74246;
   opacity: 1;    
 }
@@ -1464,12 +1449,6 @@ a.social-logotip-3 {
   opacity: 1;    
 }
 
-.letter-form input[type="text"]:hover,
-.letter-form input[type="email"]:hover,
-.letter-form textarea:hover {
-  border: 2px solid #b4b9bb;      
-}
-
 .letter-form input[type="text"]:focus,
 .letter-form input[type="email"]:focus,
 .letter-form textarea:focus {  
@@ -1477,9 +1456,40 @@ a.social-logotip-3 {
   border: 2px solid #000000;      
 }
 
-.letter-form input[type="text"]:invalid,
-.letter-form input[type="email"]:invalid {
-  border: 2px solid #e74246;    
+.letter-form input:focus::-webkit-input-placeholder,
+.letter-form textarea:focus::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 1;    
+}
+
+.letter-form input:focus::-moz-placeholder,
+.letter-form textarea:focus::-moz-placeholder {
+  color: #444444;
+  opacity: 1;   
+}
+
+.letter-form input:focus::-ms-input-placeholder,
+.letter-form textarea:focus::-ms-input-placeholder {
+  color: #444444;
+  opacity: 1;     
+}
+
+.letter-form input:focus:-ms-input-placeholder,
+.letter-form textarea:focus:-ms-input-placeholder {
+  color: #444444;
+  opacity: 1;     
+}
+
+.letter-form input:focus::placeholder,
+.letter-form textarea:focus::placeholder {
+  color: #444444;
+  opacity: 1;     
+}
+
+.letter-form input[type="text"]:hover,
+.letter-form input[type="email"]:hover,
+.letter-form textarea:hover {
+  border: 2px solid #b4b9bb;      
 }
 
 .letter-form label[for="name-field"] { 
