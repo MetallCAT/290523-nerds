@@ -2,7 +2,7 @@
   var popup = document.querySelector(".modal-window");
   var close = popup.querySelector(".modal-window-close");
   var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=user_name]");      
+  var user_name = popup.querySelector("[name=name]");      
   var mail = popup.querySelector("[name=mail]");  
 
   connect.addEventListener("click", function(event) {
@@ -17,9 +17,9 @@
   });
 
   form.addEventListener("submit", function(event) {
-    if (!user_name.value || !mail.value) {  
+    if (!name.value || !mail.value) {  
       event.preventDefault();
-      alert("Нужно ввести имя и адресс почты");
+      alert("Нужно ввести имя и адрес почты");
     }   
   });     
 

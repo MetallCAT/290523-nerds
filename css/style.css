@@ -101,7 +101,7 @@ body {
 
 .active-item {
   color: #000000;  
-  border-bottom: 2px solid #fb565a;  
+  border-bottom: 2px solid #fb565a;      
 }
 
 .main-navigation a {
@@ -1196,7 +1196,7 @@ input[type="radio"] {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  position: relative;  
+  position: relative;      
 }
 
 .social-list li:hover {
@@ -1204,11 +1204,12 @@ input[type="radio"] {
 }
 
 .social-list li:active {
-  background-color: #d7373b;  
+  background-color: #d7373b;
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .social-list a:active {
-  opacity: 0.3;  
+  opacity: 0.3;      
 }
 
 .social-list a {  
@@ -1391,6 +1392,20 @@ a.social-logotip-3 {
   border: 2px solid #d7dcde;
 }
 
+/*.letter-form input[placeholder],
+.letter-form textarea[placeholder] {
+  
+}
+
+.letter-form input[placeholder]:focus,
+.letter-form textarea[placeholder]:focus {
+  color: #444444;      
+}
+
+.letter-form input[placeholder]:invalid {
+  color: #e74246;     
+}*/
+
 .letter-form input[type="text"]:hover,
 .letter-form input[type="email"]:hover,
 .letter-form textarea:hover {
@@ -1402,14 +1417,15 @@ a.social-logotip-3 {
 .letter-form textarea:focus {
   border: 2px solid #000000;
   outline: 2px solid #000000;
-  color: #444444;
+  opacity: 1;
+  color: #444444;    
 }
 
 .letter-form input[type="text"]:invalid,
-.letter-form input[type="email"]:invalid,
-.letter-form textarea:invalid {
+.letter-form input[type="email"]:invalid {
   border: 2px solid #e74246;
-  color: ##e74246;  
+  opacity: 1;
+  color: #e74246;    
 }
 
 .letter-form label[for="name-field"] { 
