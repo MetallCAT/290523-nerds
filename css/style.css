@@ -28,16 +28,15 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #283136;
-  width: 1440px;
-  margin: 0 auto;
+  min-width: 1200px;
+  margin: 0 auto;     
 }
 
 .main-header {  
   font-size: 16px;
   line-height: 30px;
   color: #000000;
-  font-weight: 500;
-  width: 1440px;
+  font-weight: 500; 
   background-color: #eeeeee;
   padding-top: 50px;
 }
@@ -48,10 +47,10 @@ body {
   clear: both;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
+.container { 
+  width: 1160px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
 }
 
 .header-top {
@@ -529,7 +528,8 @@ input[type="radio"] {
 }
 
 .dignitys-description-2 sup {
-  display: inline-block; 
+  display: inline-block;
+  vertical-align: middle;
   font-size: 60%; 
 }
 
@@ -624,6 +624,12 @@ input[type="radio"] {
   margin: 0;
 } 
 
+.content-left legend {
+  border: 0; 
+  padding: 0;
+  margin: 0;
+} 
+
 .left-column-1 h2 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
   font-weight: 700;
@@ -688,6 +694,7 @@ input[type="radio"] {
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
+  vertical-align: top;
   width: 50%;     
 }
 
@@ -723,6 +730,7 @@ input[type="radio"] {
   margin-right: 15px;
   margin-bottom: 18px;
   display: inline-block;
+  vertical-align: baseline;
   cursor: pointer;
  }
 
@@ -782,6 +790,7 @@ input[type="radio"] {
   margin-bottom: 18px;
   margin-top: 0;
   display: inline-block;
+  vertical-align: baseline;    
   width: 150px;
   cursor: pointer;    
 }
@@ -882,7 +891,8 @@ input[type="radio"] {
 }
 
 .list li {
-  display: inline-block;  
+  display: inline-block;
+  vertical-align: top;   
   margin-right: 23px;
   text-transform: uppercase;
 }
@@ -1067,6 +1077,7 @@ input[type="radio"] {
 
 .paginator a {
   display: inline-block;
+  vertical-align: top;    
   text-decoration: none;
   color: #000000;
   background-color: #eeeeee;
@@ -1109,13 +1120,13 @@ input[type="radio"] {
   border-top: 3px solid #bfbfbf;
 }
 
-.main-footer {
-  width: 1440px;    
-}
-
 .footer-contacts {
   position: relative;
   background: url("../img/map-marker.jpg") no-repeat; 
+}
+
+.footer-contacts iframe { 
+  width: 100%; 
 }
 
 .contacts {
@@ -1169,11 +1180,6 @@ input[type="radio"] {
   color: #e37376;
   border: 3px solid #d7373b;
   border-top: 3px solid #c13135;   
-}
-
-.footer-social {
-  width: 1160px;
-  margin: 0 auto;  
 }
 
 .footer-social-left {
@@ -1362,6 +1368,7 @@ a.social-logotip-3 {
   width: 360px;
   margin-right: 35px;
   display: inline-block;
+  vertical-align: top;  
 }
 
 .letter-form .entry-field:last-of-type {
