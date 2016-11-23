@@ -50,7 +50,8 @@ body {
 .container { 
   width: 1160px; 
   margin: 0 auto; 
-  padding: 0 20px; 
+  padding: 0 20px;
+  position: relative;    
 }
 
 .header-top {
@@ -154,14 +155,14 @@ body {
 }
 
 .header-content {
-  height: 431px;
+  min-height: 431px;
 }
 
 .slider {    
   font-size: 0;
   position: relative;
   width: 1160px; 
-  height: 431px;
+  min-height: 431px;
 }
 
 .slider-info .slider-left {  
@@ -239,8 +240,7 @@ body {
   top: 0; 
   left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 100%;  
 }
 
 .slides-controls {
@@ -1142,8 +1142,8 @@ input[type="radio"] {
 .contacts {
   width: 220px;
   height: 208px;
-  top: 54px;
-  left: 140px;
+  top: -368px;
+  left: 20px;
   position: absolute;
   background-color: #ffffff;
   line-height: 18px;
