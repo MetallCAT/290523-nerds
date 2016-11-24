@@ -622,15 +622,7 @@ input[type="radio"] {
   border: 0; 
   padding: 0;
   margin: 0;
-} 
-
-.left-column-1 legend {
-  display: block;    
-  border: 0; 
-  padding: 0;      
-  margin: 0;
-  padding-top: 1px;    
-} 
+}
 
 .left-column-1 h2 {
   font-family: "Roboto-700", "Tahoma", "sans-serif";
@@ -712,14 +704,6 @@ input[type="radio"] {
   border: none;
   border-radius: 5px;
   background: #eeeeee;
-}
-
-.left-column-2 legend {
-  display: block;    
-  border: 0; 
-  padding: 0;
-  padding-bottom: 6px;      
-  margin: 0;  
 }
 
 .left-column-2 h2 {
